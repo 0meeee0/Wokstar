@@ -1,0 +1,37 @@
+body{
+    background-color: #1F1F1F;
+}
+.yr{
+    background-color: rgb(88, 88, 85);
+    border-radius: 35px;
+    margin-left: 4rem;
+    padding: 0 15px;
+}
+@media (max-width:575px) {
+    .yr{
+        background-color: transparent;
+        padding: 0;
+        margin: 0; 
+    }
+}
+.c1{
+
+}
+.c1 h1{
+    font-size: 5rem;
+}
+.c1 h2{
+    font-size: 4rem;
+}
+.botona{
+    bottom: 0;
+    left: 16%;
+    font-size: 30px;
+    border-radius: 0%;
+}
+.lll{
+    font-size: 30px;
+    bottom: 0;
+    left: 40%;
+    text-decoration: none;
+}
