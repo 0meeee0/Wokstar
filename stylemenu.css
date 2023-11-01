@@ -7,6 +7,10 @@ body{
     src: url("fonts/ROSIE_BROWN_SERIF_DEMO.OTF")
 
 }
+@font-face{
+  font-family: 'samudera';
+  src: url("fonts/SAMUDERA.OTF")
+}
 
 
 .title{
@@ -78,3 +82,69 @@ body{
   
   /* Show the dropdown menu */
   .show {display:block;}
+
+/*salad menu*/
+.salad{
+  display: flex;
+  position: relative;
+  
+
+}
+  .imgs1{
+    position: relative;
+    width:35rem;
+     height:30rem;
+     margin-left: 20%;
+  }
+  .imgs2{
+    position: absolute;
+    width: 22rem;
+    height: 20rem;
+    margin-left: 47%;
+    margin-top: 15rem;
+  }
+
+
+  .firstitems{
+    display: flex;
+    /*flex-wrap: wrap;*/
+    position: relative;
+    margin-top: 8rem;
+    justify-content: space-around;
+  }
+
+  .itemsalad{
+    width: 20rem;
+    height: 20rem;
+    
+    
+  }
+  .text{
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+   
+  .buttons{
+  
+    font-family: 'samudera';
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5rem;
+  }
+  .addbutton{
+    background-color: #C63232;
+    color: white;
+  }
+  .cstmbutton{
+    text-decoration: none;
+    padding: 0.2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border: 1px solid #333333;
+    background-color: #C63232;
+    color: white;
+  }
+
