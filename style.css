@@ -1,5 +1,6 @@
 body{
     background-color: #1F1F1F;
+    overflow-x: hidden;
 }
 .yr{
     background-color: rgb(88, 88, 85);
@@ -34,4 +35,13 @@ body{
     bottom: 0;
     left: 40%;
     text-decoration: none;
+}
+.ccss{
+    margin-right: -4rem;
+
+}
+.custom-card {
+    border: 2px solid rgb(120, 118, 118);
+    padding-bottom: 5rem;
+    box-shadow: 1px 1px 4px grey;
 }
