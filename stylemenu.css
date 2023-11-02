@@ -120,7 +120,7 @@ body{
     
   }
   .text{
-    display: flex;
+   
     color: white;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -130,13 +130,17 @@ body{
   .buttons{
   
     font-family: 'samudera';
-    display: flex;
-    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     margin-left: 5rem;
   }
   .addbutton{
     background-color: #C63232;
     color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .cstmbutton{
     text-decoration: none;
@@ -146,6 +150,9 @@ body{
     border: 1px solid #333333;
     background-color: #C63232;
     color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .pagination {
     display: flex;
@@ -159,4 +166,66 @@ body{
   }
   .active{
     background-color: #C63232;
+    
+  }
+  
+.multi-selector{
+    width: max-content;
+  
+}
+
+.select-field,.cat,.list{
+    width: 100%;
+  
+  
+}
+.cat,.list{
+  background-color:  #C63232;
+  
+}
+.select-field button{
+  background-color: #C63232;
+  padding-left: 3rem;
+
+}
+.list{
+    box-shadow: 0 30px 60px rgb(0,0,0,0.2);
+    display: none;
+}
+.down-arrow{
+    font-size: 1.2rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.cat{
+    display: block;
+    padding-left: 0;
+    color: black;
+}
+
+.show{
+    display: block;
+}
+.saladcat{
+  display: none;
+}
+.bentocat{
+  display: none;
+}
+.wncat{
+display: none;
+}
+.ddcat{
+  display: none;
+}
+  @media (max-width:575px){
+    .imgs2{
+      display: none;
+    }
+
+    
+    .firstitems{
+      flex-wrap: wrap;
+    }
   }
