@@ -26,6 +26,7 @@ body{
     color: #D9D9D9;
     position: relative;
     left: 200px;
+    top: 38px;
     font-family: Abel;
     font-size: 30px;
     font-style: normal;
@@ -42,8 +43,8 @@ body{
 }
 .img{
     position: relative;
-    left: 56% ;
-    bottom:89px ;
+    left: 56%;
+    bottom: 0px;
     z-index: 1;
     width: 395.454px;
     height: 263.089px;
@@ -177,13 +178,7 @@ body{
             background: transparent;
             transition: border-color 0.2s;
         }
-        
-        .form input:focus, .form textarea:focus, .form button:focus {
-            border: 2px solid #007bff;
-            color: #f3f3f3;
-        }
-        
-        
+
     }
     .now{
         z-index: 999;
@@ -237,11 +232,7 @@ body{
         transition: border-color 0.2s;
     
     }
-    .form input :focus{
-        border: 2px solid #007bff; 
-        color: #f3f3f3;
-    }
-    
+
     
 }
 .now{
@@ -251,15 +242,17 @@ body{
     flex-shrink: 0;
     background: #C63232;
     position: relative;
-    left: 700px;
-    bottom: 290px;
+    left: 699px;
+    bottom: 269px;
     display: flex;
     justify-content: center;
 }
 .now h2{
+    top: 24px;
     color: #FFF;
+    position: relative;
     font-family: Abyssinica SIL;
-    font-size: 33.079px;
+    font-size: 45.079px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -270,6 +263,19 @@ body{
     padding-left: 100px;
     flex-direction: column;
     gap:50px ;
+}
+.form label{
+    font-family: Poppins;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #D9D9D9;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    position: relative;
+    left: 500px;
+    top: -100px;
 }
 
 .buto{
@@ -296,13 +302,13 @@ body{
     transition: border-color 0.2s;
 
 }
-.form input :focus{
-    border: 2px solid #007bff; 
-    color: hsl(0, 0%, 95%);
-}
+
+
 .mAPS{
     width: 100% ;
     height: 50% ;
+    position: relative;
+    left: -553px;
 }
 .maps{
     display: flex;
@@ -332,7 +338,9 @@ color: #D9D9D9;
 font-family: Poppins;
 font-size: 50px;
 font-style: italic;
-
+position: relative;
+right: -300px;
+top: -650px;
 line-height: normal;
 }
 .contact_resto .Adress{
@@ -343,11 +351,8 @@ line-height: normal;
 
 }
 .contact_resto .Adress span{
-
     position: relative;
     left: 90px;
-   
-
 }
 
 .phone{
@@ -370,15 +375,51 @@ top: 300px;
     position: relative;
     left: 50px;
 }
-
-/* les icon */
+/********************************fot******************/
 footer{
     width: 100%;
+    height: 100px;
     display: flex;
+<<<<<<< HEAD
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column ;
+    gap: 90px;
+}
+.icoon{
+    width: 100px ;
+    font-size: 60px;
+    
+}
+.lom{
+    width: 800px ;
+    font-size: 20px;
+    color: #D9D9D9;
+   
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.copy{
+    width: 50px ;
+    font-size: 18px;
+    color: #D9D9D9;
+    font-size: 30px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+   
+
+}
+=======
     justify-content: center;
     align-items: end;
     position: relative;
     left: 110px;
     top: 500px;
+>>>>>>> 9b0e060ce9384b5730f7fa7f870a89b305b5ed87
 
 
