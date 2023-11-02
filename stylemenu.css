@@ -1,0 +1,231 @@
+
+body{
+    background-color: #1F1F1F;
+}
+@font-face{
+    font-family:'rosie';
+    src: url("fonts/ROSIE_BROWN_SERIF_DEMO.OTF")
+
+}
+@font-face{
+  font-family: 'samudera';
+  src: url("fonts/SAMUDERA.OTF")
+}
+
+
+.title{
+ color: white;
+ align-items: center;
+ text-align: center;
+ justify-content: center;
+ font-size: 3rem;
+ font-family: 'rosie';
+ margin-top: 2rem;
+
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #D9D9D9;
+    color: rgb(0, 0, 0);
+  padding-left: 7rem;
+  padding-right: 7rem;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3rem;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #a9a9a9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+  
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    border-radius: 2rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu */
+  .show {display:block;}
+
+/*salad menu*/
+.salad{
+  display: flex;
+  position: relative;
+  
+
+}
+  .imgs1{
+    position: relative;
+    width:35rem;
+     height:30rem;
+     margin-left: 20%;
+  }
+  .imgs2{
+    position: absolute;
+    width: 22rem;
+    height: 20rem;
+    margin-left: 47%;
+    margin-top: 15rem;
+  }
+
+
+  .firstitems{
+    display: flex;
+    /*flex-wrap: wrap;*/
+    position: relative;
+    margin-top: 8rem;
+    justify-content: space-around;
+  }
+
+  .itemsalad{
+    width: 20rem;
+    height: 20rem;
+    
+    
+  }
+  .text{
+   
+    color: white;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+   
+  .buttons{
+  
+    font-family: 'samudera';
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+  }
+  .addbutton{
+    background-color: #C63232;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .cstmbutton{
+    text-decoration: none;
+    padding: 0.2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border: 1px solid #333333;
+    background-color: #C63232;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .pagination {
+    display: flex;
+    margin-top: 3rem;
+  }
+  
+  .pagination a {
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .active{
+    background-color: #C63232;
+    
+  }
+  
+.multi-selector{
+    width: max-content;
+  
+}
+
+.select-field,.cat,.list{
+    width: 100%;
+  
+  
+}
+.cat,.list{
+  background-color:  #C63232;
+  
+}
+.select-field button{
+  background-color: #C63232;
+  padding-left: 3rem;
+
+}
+.list{
+    box-shadow: 0 30px 60px rgb(0,0,0,0.2);
+    display: none;
+}
+.down-arrow{
+    font-size: 1.2rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.cat{
+    display: block;
+    padding-left: 0;
+    color: black;
+}
+
+.show{
+    display: block;
+}
+.saladcat{
+  display: none;
+}
+.bentocat{
+  display: none;
+}
+.wncat{
+display: none;
+}
+.ddcat{
+  display: none;
+}
+  @media (max-width:575px){
+    .imgs2{
+      display: none;
+    }
+
+    
+    .firstitems{
+      flex-wrap: wrap;
+    }
+  }
