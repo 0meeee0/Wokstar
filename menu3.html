@@ -41,6 +41,20 @@
             </div>
         </div>
     </nav>
+    <section class="position-relative">
+        <img class="img-fluid rounded float-end" style="padding-top: 4rem;" src="img/headimgabt.svg"  alt="head image">
+       <div class="container">
+        
+          <h1 style="color: #D9D9D9; font-family:'Catchye Demo' ;font-size: 5rem;">Wokstar</h1>
+          <h1 style="color: #D9D9D9; font-family:'Catchye Demo' ;font-size: 4rem; ">Asian Restaurant</h1>
+          <p style="color: #D9D9D9; font-family: ;" class="h6">EXPERIENCE REAL ASIAN CUISINE.</p>
+         
+  
+  
+        </div>
+  
+      </section>
+      <section class="menufull">
     <div class="title">The Menu</div>
     <div class="search ">
         <div class="multi-selector">
@@ -67,12 +81,8 @@
                    <input type="checkbox" name="" id="cat4">
                    Drinks And Deserts
             </label>
-       
             </div>
-       
-       
            </div>
-       
     </div>
     <section class="saladcat">
         <div class="title"><h1>Salad</h1></div>
@@ -81,41 +91,41 @@
             <img class="img-fluid imgs2" src="img/salad2.jpg" alt="saladmenu">
         </div>
         <div class="firstitems">
-            <div>
+            <div id="1">
                 <img class="itemsalad" src="img/Ensaladang Talong.jpg" alt="ensaladang">
                 <div class="text1 text">
-                    <h2>Ensaladang Talong</h2>
+                    <h2>Ensaladang Talong </h2>
                     <p>salad made from grilled or roasted eggplants</p>
-                    <p>10$</p>
+                    <p class="price">10$</p>
                 </div>
                 <div class="buttons ">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '1')" class="cstmbutton" > Customize</button>
                     </div>
             </div>
-            <div>
+            <div id="2">
                 <img class="itemsalad" src="img/BunBoXao.jpg" alt="bunboxao">
                 <div class="text2 text">
                     <h2>Bun Bo Xao</h2>
               <p>zesty Vietnamese noodle dish</p>
-              <p>10$</p>
+              <p class="price">10$</p>
                     </div>
                     <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '2')" class="cstmbutton" > Customize</button>
                     </div>
                     </div>
-                    <div>
+                    <div id="3">
                         <img class="itemsalad" src="img/YushengRecipe.jpg" alt="yusheng">
                         <div class="text3 text">
                             <h2>Yusheng</h2>
               <p>a colorful and auspicious Chinese New Year salad</p>
-              <p>11$</p>
+              <p class="price">11$</p>
                         </div>
                     
                          <div class="buttons">
                             <button class="addbutton">Add</button>
-                            <a  class="cstmbutton" href="customize.html"> Customize</a>
+                            <button onclick="handlePersonalizeButtonClick(event, '3')" class="cstmbutton" > Customize</button>
                         </div>
                     </div>
         </div>
@@ -123,7 +133,7 @@
 </div>
   
     <div class="firstitems">
-        <div>
+        <div id="4">
             <img class="itemsalad" src="img/LarbGai.jpg" alt="larbgai">
             <div class="text1 text">
                 <h2>Larb Gai</h2>
@@ -132,88 +142,88 @@
             </div>
             <div class="buttons ">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '4')" class="cstmbutton" > Customize</button>
                 </div>
         </div>
-        <div>
+        <div id="5">
             <img class="itemsalad" src="img/WakameSalad.jpg" alt="wakame">
             <div class="text2 text">
                 <h2>Wakame</h2>
             <p>a tender and mild-flavored edible seaweed</p>
-            <p>9$</p>
+            <p class="price">9$</p>
                 </div>
                 <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '5')" class="cstmbutton" > Customize</button>
                 </div>
                 </div>
-                <div>
+                <div id="6">
                     <img class="itemsalad" src="img/Som Tum.jpg" alt="som tum">
                     <div class="text3 text">
                         <h2>Som Tum</h2>
             <p>green papaya salad, is a spicy and tangy </p>
-            <p>10$</p>
+            <p class="price">10$</p>
                     </div>
                 
                      <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '6')" class="cstmbutton" > Customize</button>
                     </div>
                 </div>
 
     </div>
     <div class="firstitems">
-        <div>
+        <div id="7">
             <img class="itemsalad" src="img/OiMuchim.jpg" alt="oimuchim">
             <div class="text1 text">
                 <h2>Oi Muchim</h2>
                 <p>thinly sliced cucumbers <br>seasoned with a spicy and tangy dressing</p>
-                <p>9$</p>
+                <p class="price">9$</p>
             </div>
             <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '7')" class="cstmbutton" > Customize</button>
                 </div>
         </div>
-        <div>
+        <div id="8">
             <img class="itemsalad" src="img/KimchiSalad.jpg" alt="kimchi">
             <div class="text2 text">
                 <h2>Kimchi</h2>
                 <p>fermented vegetables <br> primarily napa cabbage and Korean radishes</p>
-                <p>10$</p>
+                <p class="price">10$</p>
                 </div>
                 <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '8')" class="cstmbutton" > Customize</button>
                 </div>
                 </div>
-                <div>
+                <div id="9">
                     <img class="itemsalad" src="img/MasalaChanaChaat.jpg" alt="masalachanachaat">
 
                     <div class="text3 text">
                         <h2>Masala Chana Chaat</h2>
                         <p>boiled chickpeas, chopped vegetables,<br> and a medley of spices and chutneys, </p>
-                        <p>10$</p>
+                        <p class="price">10$</p>
                     </div>
                 
                      <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '9')" class="cstmbutton" > Customize</button>
                     </div>
                 </div>
     </div>
     <div class="firstitems">
-        <div>
+        <div id="10">
             <img class="itemsalad" src="img/VeganGado-Gado.jpg" alt="gado-gado">
     
             <div class="text1 text">
                 <h2>Vegan Gado-Gado</h2>
             <p>salad featuring a colorful mix of steamed or raw vegetables,<br> tofu, tempeh, and a rich peanut sauce,</p>
-            <p>10$</p>
+            <p class="price">10$</p>
             </div>
             <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '10')" class="cstmbutton" > Customize</button>
                 </div>
         </div>
     </div>
@@ -225,135 +235,134 @@
         <img class="img-fluid imgs2" src="img/bento2.png" alt="bentomenu">
     </div>
     <div class="firstitems">
-        <div>
+        <div id="11">
             <img class="itemsalad" src="img/Shrimp Tempura Bento.jpg" alt="shrimp">
             <div class="text1 text">
                 <h2>Shrimp Tempura <br> Bento</h2>
         <p>shrimp tempura, served in a compartmentalized <br>box  with a variety of side dishes</p>
-        <p>30$</p>
+        <p class="price">30$</p>
             </div>
             <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '11')" class="cstmbutton" > Customize</button>
                 </div>
         </div>
-        <div>
+        <div id="12">
             <img class="itemsalad" src="img/YakitoriBentoBox.jpg" alt="yakitori">
             <div class="text2 text">
                 <h2>Yakitori Bento</h2>
         <p>skewered and grilled chicken , <br> served in a compartmentalized box with accompaniments</p>
-        <p>35$</p>
+        <p class="price">35$</p>
                 </div>
                 <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '12')" class="cstmbutton" > Customize</button>
                 </div>
                 </div>
-                <div>
+                <div id="13">
                     <img class="itemsalad" src="img/beefbento.jpg" alt="beef">
                     <div class="text3 text">
                         <h2>Beef Bento</h2>
                         <p> thinly-sliced beef, often marinated and grilled, <br>served in a compartmentalized box with side dishes</p>
-                        <p>25$</p>
+                        <p class="price">25$</p>
                     </div>
                 
                      <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '13')" class="cstmbutton" > Customize</button>
                     </div>
                 </div>
     </div>
     <div class="firstitems">
-        <div>
+        <div id="14">
             <img class="itemsalad" src="img/UnagiBento.jpg" alt="unagi">
             <div class="text1 text">
                 <h2>Unagi Bento</h2>
             <p>grilled eel (unagi), <br>typically marinated in a sweet soy-based sauce <br>and served in a compartmentalized</p>
-            <p>20$</p>
+            <p class="price">20$</p>
             </div>
             <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '14')" class="cstmbutton" > Customize</button>
                 </div>
         </div>
-        <div>
+        <div id="15">
             <img class="itemsalad" src="img/sesamechickenbento.jpg" alt="sesame chicken">
             <div class="text2 text">
                 <h2>Sesame Chicken <br> Bento</h2>
                 <p>tender pieces of chicken coated in a sweet <br>and savory sesame sauce, served in a <br>compartmentalized box with accompaniments</p>
-                <p>20$</p>
+                <p class="price">20$</p>
                 </div>
                 <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '15')" class="cstmbutton" > Customize</button>
                 </div>
                 </div>
-                <div>
+                <div id="16">
                     <img class="itemsalad" src="img/bentospecial.jpg" alt="special">
 
                     <div class="text3 text">
                         <h2>Special Bento</h2>
             <p>variety of premium ingredients,<br> which can include sushi,grilled items, and more,<br> served in a compartmentalized box </p>
-            <p>30$</p>
+            <p class="price">30$</p>
                     </div>
                 
                      <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '16')" class="cstmbutton" > Customize</button>
                     </div>
                 </div>
     </div>
     <div class="firstitems">
-        <div>
+        <div id="17">
             <img class="itemsalad" src="img/YamatoHibachiGrillbento.jpg" alt="hibachi">
             <div class="text1 text">
                 <h2>Yamato Hibachi <br> Grill Bento</h2>
             <p>thinly sliced cucumbers <br>seasoned with a spicy and tangy dressing</p>
-            <p>20$</p>
+            <p class="price">20$</p>
             </div>
             <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '17')" class="cstmbutton" > Customize</button>
                 </div>
         </div>
-        <div>
+        <div id="18">
             <img class="itemsalad" src="img/teriyakichickenbento.jpg" alt="teriyakichicken">
             <div class="text2 text">
                 <h2>Teriyaki Chicken <br> Bento</h2>
             <p>fermented vegetables <br> primarily napa cabbage and Korean radishes</p>
-            <p>15$</p>
+            <p class="price">15$</p>
                 </div>
                 <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '18')" class="cstmbutton" > Customize</button>
                 </div>
                 </div>
-                <div>
+                <div id="19">
                     <img class="itemsalad" src="img/SalmonTeriyakiBento.jpg" alt="salmon">
                     <div class="text3 text">
                         <h2>Salmon Teriyaki <br> Bento</h2>
             <p>boiled chickpeas, chopped vegetables,<br> and a medley of spices and chutneys, </p>
-            <p>25$</p>
-                    </div>
-                
+            <p class="price">25$</p>
+                    </div>         
                      <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '19')" class="cstmbutton" > Customize</button>
                     </div>
                 </div>
     </div>
     <div class="firstitems">
-        <div>
+        <div id="20">
             <img class="itemsalad" src="img/vegetarianbento.jpg" alt="vegan bento">
     
             <div class="text1 text">
                 <h2>Vegetarian Bento</h2>
                 <p>plant-based ingredients like tofu, vegetables,<br> served in a compartmentalized box</p>
-                <p>30$</p>
+                <p class="price">30$</p>
             </div>
             <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '20')" class="cstmbutton" > Customize</button>
                 </div>
         </div>
     </div>
@@ -366,137 +375,133 @@
         <img class="img-fluid imgs2" src="img/wok2.png" alt="bentomenu">
     </div>
     <div class="firstitems">
-        <div>
+        <div id="21">
             <img class="itemsalad" src="img/CashewShrimp.jpg" alt="shrimp">
             <div class="text1 text">
                 <h2>Cashew Shrimp</h2>
           <p>succulent shrimp, cashews, and a savory sauce</p>
-          <p>20$</p>
+          <p class="price" >20$</p>
             </div>
             <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '21')" class="cstmbutton" > Customize</button>
                 </div>
         </div>
-        <div>
+        <div id="22">
             <img class="itemsalad" src="img/Tso'sChicken.jpg" alt="tsochicken">
             <div class="text2 text">
                 <h2>Tso's Chicken</h2>
                 <p>crispy chicken pieces coated in a <br>sweet and slightly spicy sauce</p>
-                <p>25$</p>
+                <p class="price">25$</p>
                 </div>
                 <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '22')" class="cstmbutton" > Customize</button>
                 </div>
                 </div>
-                <div>
+                <div id="23">
                     <img class="itemsalad" src="img/MongolianBeef.jpg" alt="beef">
-
                     <div class="text3 text">
                         <h2>Mongolian Beef</h2>
                         <p> tender slices of beef, stir-fried with scallions <br>and a savory-sweet soy-based sauce</p>
-                        <p>25$</p>
+                        <p class="price">25$</p>
                     </div>
                 
                      <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '23')" class="cstmbutton" > Customize</button>
                     </div>
                 </div>
     </div>
     <div class="firstitems">
-        <div>
+        <div id="24">
             <img class="itemsalad" src="img/Yakisoba.jpg" alt="yakisoba">
             <div class="text1 text">
                 <h2>Yakisoba</h2>
             <p>stir-fried noodle dish made with wheat noodles,<br> vegetables, and a savory sweet and tangy sauce</p>
-            <p>20$</p>
+            <p class="price">20$</p>
             </div>
             <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '24')" class="cstmbutton" > Customize</button>
                 </div>
         </div>
-        <div>
+        <div id="25">
             <img class="itemsalad" src="img/SpicyGochujangNoodles.jpg" alt="gochujang">
             <div class="text2 text">
                 <h2>Spicy Gochujang <br>Noodles</h2>
                 <p>noodles tossed in a spicy and umami-rich <br>sauce made from gochujang </p>
-                <p>25$</p>
+                <p class="price">25$</p>
                 </div>
                 <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '25')" class="cstmbutton" > Customize</button>
                 </div>
                 </div>
-                <div>
+                <div id="26">
                     <img class="itemsalad" src="img/VeganBibimbap.jpg" alt="bibimbap">
-
-
                     <div class="text3 text">
                         <h2>Vegan Bibimbap</h2>
             <p>plant-based  iconic Korean dish,<br> featuring a colorful medley of vegetables, rice,<br> and a spicy gochujang sauce </p>
-            <p>20$</p>
+            <p class="price">20$</p>
                     </div>
-                
                      <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '26')" class="cstmbutton" > Customize</button>
                     </div>
                 </div>
     </div>
     <div class="firstitems">
-        <div>
+        <div id="27">
             <img class="itemsalad" src="img/BeefandBroccoliStirFry.jpg" alt="BeefandBroccoliStirFry">
             <div class="text1 text">
                 <h2>Beef and Broccoli <br> Stir Fry </h2>
                 <p>tender slices of beef and fresh broccoli <br> with a savory stir-fry sauce</p>
-                <p>20$</p>
+                <p class="price">20$</p>
             </div>
             <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '27')" class="cstmbutton" > Customize</button>
                 </div>
         </div>
-        <div>
+        <div id="28">
             <img class="itemsalad" src="img/Pad See Ew.jpg" alt="pad see ew">
             <div class="text2 text">
         <h2>Pad See Ew</h2>
         <p>wide, flat rice noodles, Chinese broccoli,<br> and a sweet and savory soy-based sauce </p>
-        <p>50$</p>
+        <p class="price">50$</p>
                 </div>
                 <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '28')" class="cstmbutton" > Customize</button>
                 </div>
                 </div>
-                <div>
+                <div id="29">
                     <img class="itemsalad" src="img/VeganTofuPadThai.jpg" alt="tofu pad thai">
                     <div class="text3 text">
                         <h2>Vegan Tofu <br> Pad Thai</h2>
                         <p>classic Thai noodle dish, featuring tofu, <br>rice noodles, and a flavorful tamarind-based sauce</p>
-                        <p>30$</p>
+                        <p class="price">30$</p>
                     </div>
                 
                      <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '29')" class="cstmbutton" > Customize</button>
                     </div>
                 </div>
     </div>
     <div class="firstitems">
-        <div>
+        <div id="30">
             <img class="itemsalad" src="img/SesameChicken.jpg" alt="SesameChicken">
     
             <div class="text1 text">
                 <h2>Sesame Chicken</h2>
             <p>crispy, breaded chicken pieces <br>coated in a sweet and savory sesame sauce</p>
-            <p>30$</p>
+            <p class="price">30$</p>
             </div>
             <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '30')" class="cstmbutton" > Customize</button>
                 </div>
         </div>
     </div>
@@ -508,270 +513,271 @@
         <img class="img-fluid imgs2" src="img/drink2.png" alt="saladmenu">
     </div>
     <div class="firstitems">
-        <div>
+        <div id="31">
             <img class="itemsalad" src="img/bubbleTea.jpg" alt="bubbleTea">
             <div class="text1 text">
                 <h2>Bubble Tea</h2>
         <p>made with tea, milk, or fruit flavors,<br>includes chewy tapioca pearls (boba)</p>
-        <p>5$</p>
+        <p class="price">5$</p>
             </div>
             <div class="buttons ">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '31')" class="cstmbutton" > Customize</button>
                 </div>
         </div>
-        <div>
+        <div id="32">
             <img class="itemsalad" src="img/SoursopSmoothie.jpg" alt="SoursopSmoothie">
             <div class="text2 text">
                 <h2>Soursop Smoothie</h2>
                 <p>tropical fruit smoothie made from soursop,<br> a delicious and creamy fruit, <br>blended with ingredients like milk or yogurt</p>
-                <p>5$</p>
+                <p class="price">5$</p>
                 </div>
                 <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '32')" class="cstmbutton" > Customize</button>
                 </div>
                 </div>
-                <div>
+                <div id="33">
                     <img class="itemsalad" src="img/SpikedIcedTea.jpg" alt="SpikedIcedTea">
                     <div class="text3 text">
                         <h2>Spiked IcedTea</h2>
                         <p>cocktail added to traditinal iced tea</p>
-                        <p>7$</p>
+                        <p class="price">7$</p>
                     </div>
                 
                      <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '33')" class="cstmbutton" > Customize</button>
                     </div>
                 </div>
     </div>
     <div class="firstitems">
-        <div>
+        <div id="34">
             <img class="itemsalad" src="img/BanhDaLon.jpg" alt="BanhDaLon">
             <div class="text1 text">
                 <h2>Banh Dalon</h2>
             <p>sticky rice filled with mung bean and <br> typically wrapped in banana leaves</p>
-            <p>10$</p>
+            <p class="price">10$</p>
             </div>
             <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '34')" class="cstmbutton" > Customize</button>
                 </div>
         </div>
-        <div>
+        <div id="35">
             <img class="itemsalad" src="img/mochi.jpg" alt="mochi">
             <div class="text2 text">
-                h2>Mochi</h2>
+                <h2>Mochi</h2>
                 <p>rice cake made from glutinous rice, <br> comes in various flavors and fillings</p>
-                <p>8$</p>
+                <p class="price">8$</p>
                 </div>
                 <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '35')" class="cstmbutton" > Customize</button>
                 </div>
                 </div>
-                <div>
+                <div id="36">
                     <img class="itemsalad" src="img/SesameBallswithRedBeanPaste.jpg" alt="SesameBallswithRedBeanPaste">
 
                     <div class="text3 text">
                         <h2>Sesame Balls</h2>
             <p>glutinous rice flour, filled with sweet red bean paste,<br> and coated with sesame seeds </p>
-            <p>10$</p>
+            <p class="price">10$</p>
                     </div>
                 
                      <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '36')" class="cstmbutton" > Customize</button>
                     </div>
                 </div>
     </div>
     <div class="firstitems">
-        <div>
+        <div id="37">
         <img class="itemsalad" src="img/VeganMangoLassi.jpg" alt="VeganMangoLassi">
             <div class="text1 text">
                 <h2>Vegan Mango Lassi</h2>
                 <p>ripe mangoes blended with vegan yogurt</p>
-                <p>4$</p>
+                <p class="price">4$</p>
             </div>
             <div class="buttons ">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '37')" class="cstmbutton" > Customize</button>
                 </div>
         </div>
-        <div>
+        <div id="38">
             <img class="itemsalad" src="img/MatchaLatte.jpg" alt="MatchaLatte">
             <div class="text2 text">
                 <h2>Matcha Latte</h2>
                 <p>high-quality matcha powder into steamed milk</p>
-                <p>3$</p>
+                <p class="price">3$</p>
                 </div>
                 <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '38')" class="cstmbutton" > Customize</button>
                 </div>
                 </div>
-                <div>
+                <div id="39">
                     <img class="itemsalad" src="img/MangoStickyRice.jpg" alt="MangoStickyRice">
                     <div class="text3 text">
                         <h2>Mango Sticky Rice</h2>
                         <p>glutinous rice, fresh mango slices,<br>and a sweet coconut milk drizzle </p>
-                        <p>5$</p>
+                        <p class="price">5$</p>
                     </div>
                 
                      <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '39')" class="cstmbutton" > Customize</button>
                     </div>
                 </div>
     </div>
     <div class="firstitems">
-        <div>
+        <div id="40">
             <img class="itemsalad" src="img/Anmitsu.jpg" alt="Anmitsu">
     
             <div class="text1 text">
                 <h2>Anmitsu</h2>
                 <p>agar jelly cubes, sweet azuki red bean paste,<br> assorted fruits, and a drizzle of syrup</p>
-                <p>15$</p>
+                <p class="price">15$</p>
             </div>
             <div class="buttons">
                     <button class="addbutton">Add</button>
-                    <a  class="cstmbutton" href="customize.html"> Customize</a>
+                    <button onclick="handlePersonalizeButtonClick(event, '40')" class="cstmbutton" > Customize</button>
                 </div>
         </div>
     </div>
 </section>
+    <!-- menu 3-->
     <section id="m1">
         <div class="firstitems">
-            <div>
+            <div id="31">
                 <img class="itemsalad" src="img/bubbleTea.jpg" alt="bubbleTea">
                 <div class="text1 text">
                     <h2>Bubble Tea</h2>
             <p>made with tea, milk, or fruit flavors,<br>includes chewy tapioca pearls (boba)</p>
-            <p>5$</p>
+            <p class="price">5$</p>
                 </div>
                 <div class="buttons ">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '31')" class="cstmbutton" > Customize</button>
                     </div>
             </div>
-            <div>
+            <div id="32">
                 <img class="itemsalad" src="img/SoursopSmoothie.jpg" alt="SoursopSmoothie">
                 <div class="text2 text">
                     <h2>Soursop Smoothie</h2>
                     <p>tropical fruit smoothie made from soursop,<br> a delicious and creamy fruit, <br>blended with ingredients like milk or yogurt</p>
-                    <p>5$</p>
+                    <p class="price">5$</p>
                     </div>
                     <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '32')" class="cstmbutton" > Customize</button>
                     </div>
                     </div>
-                    <div>
+                    <div id="33">
                         <img class="itemsalad" src="img/SpikedIcedTea.jpg" alt="SpikedIcedTea">
                         <div class="text3 text">
                             <h2>Spiked IcedTea</h2>
                             <p>cocktail added to traditinal iced tea</p>
-                            <p>7$</p>
+                            <p class="price">7$</p>
                         </div>
                     
                          <div class="buttons">
                             <button class="addbutton">Add</button>
-                            <a  class="cstmbutton" href="customize.html"> Customize</a>
+                            <button onclick="handlePersonalizeButtonClick(event, '33')" class="cstmbutton" > Customize</button>
                         </div>
                     </div>
         </div>
         <div class="firstitems">
-            <div>
+            <div id="27">
                 <img class="itemsalad" src="img/BeefandBroccoliStirFry.jpg" alt="BeefandBroccoliStirFry">
                 <div class="text1 text">
                     <h2>Beef and Broccoli <br> Stir Fry </h2>
                     <p>tender slices of beef and fresh broccoli <br> with a savory stir-fry sauce</p>
-                    <p>20$</p>
+                    <p class="price">20$</p>
                 </div>
                 <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '27')" class="cstmbutton" > Customize</button>
                     </div>
             </div>
-            <div>
+            <div id="28">
                 <img class="itemsalad" src="img/Pad See Ew.jpg" alt="pad see ew">
                 <div class="text2 text">
             <h2>Pad See Ew</h2>
             <p>wide, flat rice noodles, Chinese broccoli,<br> and a sweet and savory soy-based sauce </p>
-            <p>50$</p>
+            <p class="price">50$</p>
                     </div>
                     <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '28')" class="cstmbutton" > Customize</button>
                     </div>
                     </div>
-                    <div>
+                    <div id="29">
                         <img class="itemsalad" src="img/VeganTofuPadThai.jpg" alt="tofu pad thai">
                         <div class="text3 text">
                             <h2>Vegan Tofu <br> Pad Thai</h2>
                             <p>classic Thai noodle dish, featuring tofu, <br>rice noodles, and a flavorful tamarind-based sauce</p>
-                            <p>30$</p>
+                            <p class="price">30$</p>
                         </div>
                     
                          <div class="buttons">
                             <button class="addbutton">Add</button>
-                            <a  class="cstmbutton" href="customize.html"> Customize</a>
+                            <button onclick="handlePersonalizeButtonClick(event, '29')" class="cstmbutton" > Customize</button>
                         </div>
                     </div>
         </div>
         <div class="firstitems">
-            <div>
+            <div id="7">
                 <img class="itemsalad" src="img/OiMuchim.jpg" alt="oimuchim">
                 <div class="text1 text">
                     <h2>Oi Muchim</h2>
                     <p>thinly sliced cucumbers <br>seasoned with a spicy and tangy dressing</p>
-                    <p>9$</p>
+                    <p class="price">9$</p>
                 </div>
                 <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '7')" class="cstmbutton" > Customize</button>
                     </div>
             </div>
-            <div>
+            <div id="8">
                 <img class="itemsalad" src="img/KimchiSalad.jpg" alt="kimchi">
                 <div class="text2 text">
                     <h2>Kimchi</h2>
                     <p>fermented vegetables <br> primarily napa cabbage and Korean radishes</p>
-                    <p>10$</p>
+                    <p class="price">10$</p>
                     </div>
                     <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '8')" class="cstmbutton" > Customize</button>
                     </div>
                     </div>
-                    <div>
+                    <div id="9">
                         <img class="itemsalad" src="img/MasalaChanaChaat.jpg" alt="masalachanachaat">
     
                         <div class="text3 text">
                             <h2>Masala Chana Chaat</h2>
                             <p>boiled chickpeas, chopped vegetables,<br> and a medley of spices and chutneys, </p>
-                            <p>10$</p>
+                            <p class="price">10$</p>
                         </div>
                     
                          <div class="buttons">
                             <button class="addbutton">Add</button>
-                            <a  class="cstmbutton" href="customize.html"> Customize</a>
+                            <button onclick="handlePersonalizeButtonClick(event, '9')" class="cstmbutton" > Customize</button>
                         </div>
                     </div>
         </div>
         <div class="firstitems">
-            <div>
+            <div id="20">
                 <img class="itemsalad" src="img/vegetarianbento.jpg" alt="vegan bento">
         
                 <div class="text1 text">
                     <h2>Vegetarian Bento</h2>
                     <p>plant-based ingredients like tofu, vegetables,<br> served in a compartmentalized box</p>
-                    <p>30$</p>
+                    <p class="price">30$</p>
                 </div>
                 <div class="buttons">
                         <button class="addbutton">Add</button>
-                        <a  class="cstmbutton" href="customize.html"> Customize</a>
+                        <button onclick="handlePersonalizeButtonClick(event, '20')" class="cstmbutton" > Customize</button>
                     </div>
             </div>
         </div>
@@ -782,7 +788,18 @@
       <a href="menu4.html">4</a>
   </div>
   </section>
-
+</section>
+<footer>
+    <div class="iicon">
+        <ion-icon class="icoon" id="twiter" name="logo-twitter"></ion-icon>
+        <ion-icon class="icoon" id="fb" name="logo-facebook"></ion-icon>
+        <ion-icon class="icoon" id="insta" name="logo-instagram"></ion-icon>
+        <ion-icon class="icoon" id="whatsapp" name="logo-whatsapp"></ion-icon>
+    </div>
+            <div class="footer-content">
+                <p>&copy; 2024 copyright 404</p>
+            </div>
+    </footer>
     <script src="menu.js">   
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
