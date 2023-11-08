@@ -39,7 +39,7 @@
                     <path d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" />
                     <path d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055" />
                     <path d="M6 8h15l-3.5 7l-7.1 -.747a4 4 0 0 1 -3.296 -2.493l-2.853 -7.13a1 1 0 0 0 -.928 -.63h-1.323" />
-                  </svg><span class="bg-danger" style="border-radius: 5px;">0</span>
+                  </svg>
                 </a> 
             </div>
         </div>
@@ -810,7 +810,36 @@
                 <p>&copy; 2024 copyright 404</p>
             </div>
     </footer>
-    
+    <script>
+         //customize
+ function handlePersonalizeButtonClick(event, id) {
+  // Get the specific plat-div element using the provided ID
+  const parentDiv = document.getElementById(id);
+
+  // Extract necessary information from the parent div
+  const title = parentDiv.querySelector("h2").textContent;
+  const description = parentDiv.querySelector("p").textContent;
+  const price = parentDiv.querySelector(".price").textContent;
+  const imageSrc = parentDiv.querySelector("img").getAttribute("src");
+
+  // Create an object with the extracted data
+  const personalizedPlate = {
+    title: title,
+    description: description,
+    price: price,
+    imageSrc: imageSrc,
+  };
+        // Store the personalized plate data in localStorage
+        localStorage.setItem(
+          "personalizedPlate",
+          JSON.stringify(personalizedPlate)
+        );
+
+        // Redirect to the personalized.html page
+        window.location.href = "customize.html";
+      }
+
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
