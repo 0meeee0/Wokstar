@@ -32,7 +32,7 @@
                     </li>
                 </ul>
                 <!-- <a href="#" class="navbar-brand">P</a> -->
-                <a href="cart.html" class="navbar-brand"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-garden-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="grey" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <a href="#" class="navbar-brand"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-garden-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="grey" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M17.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" />
                     <path d="M6 8v11a1 1 0 0 0 1.806 .591l3.694 -5.091v.055" />
@@ -42,9 +42,21 @@
             </div>
         </div>
     </nav>
+    <div id="dropCart" class=" w-100 h-50 end-0 mt-2 rounded-bottom-4 position-absolute z-1 visually-hidden">
+        <div class="col-md-8 float-end">
+            <div class="shopping-cart">
+              <h2 class="mb-4">Shopping Cart</h2>
+              <ul id="cart-items" class="list-group"></ul>
+              <div id="total-price" class="mt-3"></div>
+              <button id="checkout-button" class="btn btn-primary mt-3">Checkout</button>
+            </div>
+          </div>
+                    
+    </div>
+    
     <section class="position-relative">
         <img class="img-fluid rounded float-end" style="padding-top: 4rem;" src="img/headimgabt.svg"  alt="head image">
-       <div class="container">
+       <div >
         
           <h1 style="color: #D9D9D9; font-family:'Catchye Demo' ;font-size: 5rem;">Wokstar</h1>
           <h1 style="color: #D9D9D9; font-family:'Catchye Demo' ;font-size: 4rem; ">Asian Restaurant</h1>
@@ -159,7 +171,7 @@
                 </div>
                 </div>
                 <div id="6">
-                    <img class="itemsalad" src="img/Som Tum.jpg" alt="som tum">
+                    <img class="itemsalad" src="img/SomTum.jpg" alt="som tum">
                     <div class="text3 text">
                         <h2>Som Tum</h2>
             <p>green papaya salad, is a spicy and tangy </p>
@@ -237,7 +249,7 @@
     </div>
     <div class="firstitems">
         <div id="11">
-            <img class="itemsalad" src="img/Shrimp Tempura Bento.jpg" alt="shrimp">
+            <img class="itemsalad" src="img/ShrimpTempuraBento.jpg" alt="shrimp">
             <div class="text1 text">
                 <h2>Shrimp Tempura <br> Bento</h2>
         <p>shrimp tempura, served in a compartmentalized <br>box  with a variety of side dishes</p>
