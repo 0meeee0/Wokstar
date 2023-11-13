@@ -58,13 +58,14 @@ body{
     justify-content: space-between;
     margin-top: 50px;
   }
-  
+   
   .shopping-cart {
-    background-color: #f8f9fa;
+    background-color: #C63232;
     border: 1px solid #dee2e6;
     border-radius: 8px;
     padding: 20px;
     width: 45%;
+  
   }
   
   .shopping-cart h2 {

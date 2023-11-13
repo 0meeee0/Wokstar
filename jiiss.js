@@ -55,6 +55,10 @@ function updateCartDisplay() {
   selectedItems.forEach(item => {
     const listItem = document.createElement('li');
     listItem.innerText = `${item.name}: $${item.price}`;
+      if (item.text) {
+      listItem.innerText += ` - ${item.text}`;
+    }
+
     cartItemsContainer.appendChild(listItem);
     totalPrice += parseFloat(item.price);
   });
@@ -88,3 +92,4 @@ tCart.addEventListener('click', function(){
     
     
 })
+
