@@ -8,56 +8,56 @@ body{
 
 .titel h1{
     position: relative;
-    left: 90px;
-    width: 641.254px;
-    height: 214.896px;
-    top: 90px;
+    left: 5.625rem;
+    width: 40.07rem;
+    height: 13.431rem;
+    top: 5.625rem;
     color: #D9D9D9;
     font-family: Abel;
-    font-size: 65.91px;
+    font-size: 4.11rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 .titel p{
-    width: 500px;
-    height: 30px;
+    width: 31.25rem;
+    height: 1.875rem;
     flex-shrink: 0;
     color: #D9D9D9;
     position: relative;
-    left: 200px;
-    top: 38px;
+    left: 12.5rem;
+    top: 2.375rem;
     font-family: Abel;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
 }
 .img-1 .immg{
-    top: 53px;
+    top: 3.31rem;
     position: relative;
-    left: 578px;
-    width: 523px;
-    height: 432px;
+    left: 36.125rem;
+    width: 32.68rem;
+    height: 27rem;
 }
 .img{
     position: relative;
-    left: 663px;
-    bottom: -41px;
+    left: 43.43rem;
+    bottom: -2.5rem;
     z-index: 1;
-    width: 395.454px;
-    height: 263.089px;
+    width: 24.71rem;
+    height: 16.44rem;
 }
 .now{
     z-index: 1;
     border-radius: 29px;
     background: red;
     position: relative;
-    left: 398px;
-    top: -215px;
-    width: 302px;
-    height: 82px;
+    left: 28.88rem;
+    top: -14rem;
+    width: 19rem;
+    height: 5rem;
     color: #D9D9D9;
     font-family: Abel;
     font-size: 30px;
@@ -66,7 +66,6 @@ body{
     line-height: normal;
     text-transform: uppercase;
     text-align: center;
-
 }
 .now h2{
     font-size: 21px;
@@ -76,12 +75,17 @@ body{
 }
 .form{
  
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 700px;
-    gap: 101px;
-    border: transparent;
+display: flex;
+ 
+justify-content: center;
+ 
+flex-direction: column;
+ 
+/* width: 100rem; */
+ 
+gap: 7rem;
+ 
+border: transparent;
 }
 .form input , textarea , button {
     position: relative;
@@ -100,8 +104,8 @@ body{
 
 }
 .form button{
-    width: 100px;
-    height: 40px;
+    width: 8rem;
+    height: 4rem;
     background: red;
     border-radius: 30px;
     color: #D9D9D9;
@@ -112,7 +116,7 @@ body{
     line-height: normal;
     text-transform: uppercase;
     text-align: center;
-    margin-left: 300px;
+    margin-left: 17rem;
 }
 #HH2{
     color: rgb(156, 159, 159);
