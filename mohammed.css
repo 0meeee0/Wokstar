@@ -37,13 +37,13 @@ body{
 .img-1 .immg{
     top: 53px;
     position: relative;
-    left: 578px;
+    left: 1096px;
     width: 523px;
     height: 432px;
 }
 .img{
     position: relative;
-    left: 663px;
+    left: 1200px;
     bottom: -41px;
     z-index: 1;
     width: 395.454px;
@@ -54,7 +54,7 @@ body{
     border-radius: 29px;
     background: red;
     position: relative;
-    left: 398px;
+    left: 957px;
     top: -215px;
     width: 302px;
     height: 82px;
@@ -75,7 +75,7 @@ body{
     top: 28px;
 }
 .form{
- 
+    margin-left: 200px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -118,7 +118,7 @@ body{
     color: rgb(156, 159, 159);
     margin-top: 35px;
     position: relative;
-    left: 789px;
+    left: 992px;
 }
 .maps{
     position: relative;
@@ -136,7 +136,7 @@ body{
 footer{
     position: relative;
     top: 100px;
-    width: 1519px;
+    width: 2023px;
     height: 100px;
     background: rgb(116 116 116 / 95%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -159,10 +159,10 @@ footer{
     
     .img{
         position: relative;
-        width: 294px;
-        height: 249px;
-        left: 881px;
-        top: 265px;
+        width: 328px;
+        height: 272px;
+        left: 1377px;
+        top: 273px;
     }
     .immg{
         margin-bottom: 49px;
@@ -171,10 +171,11 @@ footer{
     }
     .now{
         top: -235px;
-    position: relative;
-    left: 714px;
-    width: 230px;
-    height: 72px;
+        position: relative;
+        left: 1216px;
+        width: 230px;
+        height: 72px;
+    
     }
     .now h2{
         font-size: 24px;
@@ -230,7 +231,7 @@ footer{
     footer{
         position: relative;
         top: 200px;
-        width: 1700px;
+        width: 2110px;
         height: 120px;
         font-size: 20px;
 
