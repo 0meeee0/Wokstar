@@ -1,36 +1,95 @@
+
+
 console.log("connected")
 let carts = document.querySelectorAll('.addbutton')
 for (let i=0; i<carts.length; i++){
     carts[i].addEventListener('click', function(){
         console.log('tzadt')
-
+        
     })
 }
-     //customize
-     function handlePersonalizeButtonClick(event, id) {
-        // Get the specific plat-div element using the provided ID
-        const parentDiv = document.getElementById(id);
+
+
+// Get all the "Add" buttons
+const addButtons = document.querySelectorAll('.addbutton');
+
+// Function to handle the click event when "Add" button is pressed
+function handleAddButtonClick(event) {
+  const itemContainer = event.target.parentElement.parentElement;
+  const itemName = itemContainer.querySelector('h2').innerText;
+  const itemPrice = itemContainer.querySelector('p:last-of-type').innerText;
+
+  const selectedItem = {
+    name: itemName,
+    price: itemPrice
+  };
+
+  // Get the existing items from local storage or initialize an empty array
+  const existingItems = JSON.parse(localStorage.getItem('selectedItems')) || [];
+
+  // Add the selected item to the existing items
+  existingItems.push(selectedItem);
+
+  // Store the updated items in local storage
+  localStorage.setItem('selectedItems', JSON.stringify(existingItems));
+}
+
+// Attach click event listener to each "Add" button
+addButtons.forEach(button => {
+  button.addEventListener('click', handleAddButtonClick);
+});
+
+
+function updateCartDisplay() {
+  const cartItemsContainer = document.getElementById('cart-items');
+  const totalPriceElement = document.getElementById('total-price');
+  
+  // Get selected items from local storage
+  const selectedItems = JSON.parse(localStorage.getItem('selectedItems')) || [];
+  
+  // Clear previous content
+  cartItemsContainer.innerHTML = '';
+  
+  // Display each selected item in the cart
+  let totalPrice = 0;
+  selectedItems.forEach(item => {
+    const listItem = document.createElement('li');
+    listItem.innerText = `${item.name}: $${item.price}`;
+      if (item.text) {
+      listItem.innerText += ` - ${item.text}`;
+    }
+
+    cartItemsContainer.appendChild(listItem);
+    totalPrice += parseFloat(item.price);
+  });
+  
+  // Display total price
+  totalPriceElement.innerText = `Total: $${totalPrice.toFixed(2)}`;
+}
+
+// Call updateCartDisplay to initially populate the cart
+updateCartDisplay();
+
+// Add event listener for the checkout button
+const checkoutButton = document.getElementById('checkout-button');
+checkoutButton.addEventListener('click', function() {
+  // You can add your checkout logic here
+  alert('Thank you for your order!');
+  // Clear selected items from local storage after checkout
+  localStorage.removeItem('selectedItems');
+  // Update cart display
+  updateCartDisplay();
+});
+
+let tCart = document.getElementById('pCart');
+let dCart = document.getElementById('dropCart');
+
+tCart.addEventListener('click', function(){
+    if( dCart.classList.contains("visually-hidden"))
+        dCart.classList.remove("visually-hidden")
+    else
+        dCart.classList.add("visually-hidden")
     
-        // Extract necessary information from the parent div
-        const title = parentDiv.querySelector("h2").textContent;
-        const description = parentDiv.querySelector("p").textContent;
-        const price = parentDiv.querySelector(".price").textContent;
-        const imageSrc = parentDiv.querySelector("img").getAttribute("src");
     
-        // Create an object with the extracted data
-        const personalizedPlate = {
-          title: title,
-          description: description,
-          price: price,
-          imageSrc: imageSrc,
-        };
-    
-        // Store the personalized plate data in localStorage
-        localStorage.setItem(
-          "personalizedPlate",
-          JSON.stringify(personalizedPlate)
-        );
-    
-        // Redirect to the personalized.html page
-        window.location.href = "customize.html";
-      }
+})
+
