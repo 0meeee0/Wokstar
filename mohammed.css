@@ -122,7 +122,7 @@ border: transparent;
     color: rgb(156, 159, 159);
     margin-top: 35px;
     position: relative;
-    left: 789px;
+    left: 992px;
 }
 .maps{
     position: relative;
@@ -140,7 +140,7 @@ border: transparent;
 footer{
     position: relative;
     top: 100px;
-    width: 1519px;
+    width: 2023px;
     height: 100px;
     background: rgb(116 116 116 / 95%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -163,10 +163,10 @@ footer{
     
     .img{
         position: relative;
-        width: 294px;
-        height: 249px;
-        left: 881px;
-        top: 265px;
+        width: 328px;
+        height: 272px;
+        left: 1377px;
+        top: 273px;
     }
     .immg{
         margin-bottom: 49px;
@@ -175,10 +175,11 @@ footer{
     }
     .now{
         top: -235px;
-    position: relative;
-    left: 714px;
-    width: 230px;
-    height: 72px;
+        position: relative;
+        left: 1216px;
+        width: 230px;
+        height: 72px;
+    
     }
     .now h2{
         font-size: 24px;
@@ -234,7 +235,7 @@ footer{
     footer{
         position: relative;
         top: 200px;
-        width: 1700px;
+        width: 2110px;
         height: 120px;
         font-size: 20px;
 
