@@ -93,3 +93,56 @@ tCart.addEventListener('click', function(){
     
 })
 
+// Function to handle the click event when "Delete" button is pressed
+function handleDeleteButtonClick(itemName) {
+  // Get the existing items from local storage
+  const existingItems = JSON.parse(localStorage.getItem('selectedItems')) || [];
+
+  // Remove the selected item from the existing items based on the itemName
+  const updatedItems = existingItems.filter(item => item.name !== itemName);
+
+  // Store the updated items in local storage
+  localStorage.setItem('selectedItems', JSON.stringify(updatedItems));
+
+  // Update cart display after deletion
+  updateCartDisplay();
+}
+
+// Modify the updateCartDisplay function to include delete buttons
+function updateCartDisplay() {
+  const cartItemsContainer = document.getElementById('cart-items');
+  const totalPriceElement = document.getElementById('total-price');
+
+  // Get selected items from local storage
+  const selectedItems = JSON.parse(localStorage.getItem('selectedItems')) || [];
+
+  // Clear previous content
+  cartItemsContainer.innerHTML = '';
+
+  // Display each selected item in the cart with a delete button
+  let totalPrice = 0;
+  selectedItems.forEach(item => {
+    const listItem = document.createElement('li');
+    listItem.innerText = `${item.name}: ${item.price}`;
+
+    // Add a delete button for each item
+    const deleteButton = document.createElement('button');
+    deleteButton.innerText = 'Delete';
+    deleteButton.addEventListener('click', () => handleDeleteButtonClick(item.name));
+    listItem.appendChild(deleteButton);
+
+    // Display additional text if available (e.g., item.text)
+    if (item.text) {
+      listItem.innerText += ` - ${item.text}`;
+    }
+
+    cartItemsContainer.appendChild(listItem);
+    totalPrice += parseFloat(item.price);
+  });
+
+  // Display total price
+  totalPriceElement.innerText = `Total: ${totalPrice.toFixed(2)}`;
+}
+
+// Call updateCartDisplay to initially populate the cart
+updateCartDisplay();
