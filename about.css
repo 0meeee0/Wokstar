@@ -1,0 +1,44 @@
+.cont1{
+    display: grid;
+    gap: 1rem;
+
+}
+.imgandp, .p1cont1, .h1cont1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+
+    
+}
+.p2cont1, .p1cont1{
+    color: aliceblue;
+    font-family: 'badoga';
+    letter-spacing: 0.2rem;
+}
+.h1cont1{
+    font-family: 'meladu rose';
+    font-size: 400%;
+    color: aliceblue;
+}
+.p2cont1{
+    padding-top: 10rem;
+    padding-right: 10rem;
+}
+.foter-color{
+    color:aliceblue ;
+}
+.evh2{
+    margin-top: 5rem;
+    font-family: 'meladu rose';
+   
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+
+}
