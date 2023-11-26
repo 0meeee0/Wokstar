@@ -81,17 +81,6 @@ checkoutButton.addEventListener('click', function() {
   updateCartDisplay();
 });
 
-let tCart = document.getElementById('pCart');
-let dCart = document.getElementById('dropCart');
-
-tCart.addEventListener('click', function(){
-    if( dCart.classList.contains("visually-hidden"))
-        dCart.classList.remove("visually-hidden")
-    else
-        dCart.classList.add("visually-hidden")
-    
-    
-})
 
 // Function to handle the click event when "Delete" button is pressed
 function handleDeleteButtonClick(itemName) {
@@ -146,3 +135,16 @@ function updateCartDisplay() {
 
 // Call updateCartDisplay to initially populate the cart
 updateCartDisplay();
+
+
+let tCart = document.getElementById('pCart');
+let dCart = document.getElementById('dropCart');
+
+tCart.addEventListener('click', function(){
+    if( dCart.classList.contains("visually-hidden"))
+        dCart.classList.remove("visually-hidden")
+    else
+        dCart.classList.add("visually-hidden")
+    
+    
+})
