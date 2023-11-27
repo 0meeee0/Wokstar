@@ -1,5 +1,4 @@
 
-
 console.log("connected")
 let carts = document.querySelectorAll('.addbutton')
 for (let i=0; i<carts.length; i++){
@@ -54,7 +53,7 @@ function updateCartDisplay() {
   let totalPrice = 0;
   selectedItems.forEach(item => {
     const listItem = document.createElement('li');
-    listItem.innerText = `${item.name}: $${item.price}`;
+    listItem.innerText = `${item.name}: $${item.price}`; // item.name + ": $" + item.price 
       if (item.text) {
       listItem.innerText += ` - ${item.text}`;
     }
