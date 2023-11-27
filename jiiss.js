@@ -63,7 +63,7 @@ function updateCartDisplay() {
   });
   
   // Display total price
-  totalPriceElement.innerText = `Total: $${totalPrice.toFixed(2)}`;
+  totalPriceElement.innerText = `Total: $${totalPrice}`;
 }
 
 // Call updateCartDisplay to initially populate the cart
@@ -129,7 +129,7 @@ function updateCartDisplay() {
   });
 
   // Display total price
-  totalPriceElement.innerText = `Total: ${totalPrice.toFixed(2)}`;
+  totalPriceElement.innerText = `Total: ${totalPrice}`;
 }
 
 // Call updateCartDisplay to initially populate the cart
