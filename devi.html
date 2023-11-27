@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="img/LOGO.svg">
+    <title>Dev Cart</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add your custom styles here */
+    </style>
+</head>
+<section class="container-fluid" style="margin-top: 10vh;">
+    <a href="index.html"><img src="img/LOGOBLACK.svg" class="img-fluid" width="100"></a>
+</section>
+<style>
+    .hideBtn {
+        display: none !important;
+    }
+</style>
+
+<body>
+    <div class="container mt-5">
+        <h2>Dev Cart</h2>
+        <table class="table">
+            <thead>
+                <tr>
+
+                    <th>Item</th>
+
+                </tr>
+            </thead>
+            <tbody id="cart-body">
+                <!-- Cart items will be dynamically added here -->
+                <td id="cart-items"></td>
+                <td id="total-price"></td>
+
+
+                <div id="total-price" class="mt-3"></div>
+            </tbody>
+        </table>
+        <button class="btn btn-primary" onclick="printCart()">Print Cart</button>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (required for some Bootstrap components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="jiiss.js"></script>
+    <script>
+        let cartItems = [{
+                id: 1,
+                name: 'cart-items',
+                price: 10
+            },
+            // Add more items as needed
+        ];
+
+        function renderCart() {
+            const cartBody = document.getElementById('cart-body');
+            cartBody.innerHTML = '';
+
+            cartItems.forEach((item, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+          <td>${index + 1}</td>
+          
+        `;
+                cartBody.appendChild(row);
+            });
+        }
+
+        function removeItem(index) {
+            cartItems.splice(index, 1);
+            renderCart();
+        }
+
+        function printCart() {
+
+            const aha = document.querySelectorAll('button');
+            aha.forEach((btn) => {
+                btn.classList.add("hideBtn")
+            })
+
+            // This will open the browser's print dialog
+            window.print();
+            aha.forEach((btn) => {
+                btn.classList.remove("hideBtn")
+            })
+        }
+
+        // Initial rendering
+    </script>
+
+</body>
+
+</html>
