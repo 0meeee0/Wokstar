@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> c85f6b3f512bb7ba4229b553161803a6305904ed
 console.log("connected")
 let carts = document.querySelectorAll('.addbutton')
 for (let i = 0; i < carts.length; i++) {
@@ -39,6 +43,7 @@ addButtons.forEach(button => {
 
 
 function updateCartDisplay() {
+<<<<<<< HEAD
     const cartItemsContainer = document.getElementById('cart-items');
     const totalPriceElement = document.getElementById('total-price');
 
@@ -63,6 +68,32 @@ function updateCartDisplay() {
 
     // Display total price
     totalPriceElement.innerText = `Total: $${totalPrice.toFixed(2)}`;
+=======
+  const cartItemsContainer = document.getElementById('cart-items');
+  const totalPriceElement = document.getElementById('total-price');
+  
+  // Get selected items from local storage
+  const selectedItems = JSON.parse(localStorage.getItem('selectedItems')) || [];
+  
+  // Clear previous content
+  cartItemsContainer.innerHTML = '';
+  
+  // Display each selected item in the cart
+  let totalPrice = 0;
+  selectedItems.forEach(item => {
+    const listItem = document.createElement('li');
+    listItem.innerText = `${item.name}: $${item.price}`; // item.name + ": $" + item.price 
+      if (item.text) {
+      listItem.innerText += ` - ${item.text}`;
+    }
+
+    cartItemsContainer.appendChild(listItem);
+    totalPrice += parseFloat(item.price);
+  });
+  
+  // Display total price
+  totalPriceElement.innerText = `Total: $${totalPrice}`;
+>>>>>>> c85f6b3f512bb7ba4229b553161803a6305904ed
 }
 
 // Call updateCartDisplay to initially populate the cart
@@ -127,8 +158,13 @@ function updateCartDisplay() {
         totalPrice += parseFloat(item.price);
     });
 
+<<<<<<< HEAD
     // Display total price
     totalPriceElement.innerText = `Total: ${totalPrice.toFixed(2)}`;
+=======
+  // Display total price
+  totalPriceElement.innerText = `Total: ${totalPrice}`;
+>>>>>>> c85f6b3f512bb7ba4229b553161803a6305904ed
 }
 
 // Call updateCartDisplay to initially populate the cart
