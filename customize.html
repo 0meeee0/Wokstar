@@ -301,7 +301,10 @@
           price: parseInt(itemPrice.slice(0,itemPrice.length - 1)),
           text: textInputValue,
         };
-
+        //adds 2$ if written in text input
+        if (textInputValue.trim() !== "") {
+        selectedItem.price += 2;
+    }
         // Get the existing items from local storage or initialize an empty array
         const existingItems =
           JSON.parse(localStorage.getItem("selectedItems")) || [];
