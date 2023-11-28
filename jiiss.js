@@ -14,10 +14,9 @@ function handleAddButtonClick(event) {
   const itemContainer = event.target.parentElement.parentElement;
   const itemName = itemContainer.querySelector("h2").innerText;
   const itemPrice = itemContainer.querySelector("p:last-of-type").innerText;
-  const itemId = itemContainer.getAttribute("id");
   const selectedItem = {
-    id: itemId,
     name: itemName,
+    text: "",
     price: parseInt(itemPrice.slice(0,itemPrice.length - 1)),
   };
 
@@ -25,7 +24,10 @@ function handleAddButtonClick(event) {
   const existingItems = JSON.parse(localStorage.getItem("selectedItems")) || [];
 
 
-    const indexExiste = existingItems.findIndex(({id}) => id === selectedItem.id);
+    const indexExiste = existingItems.findIndex(
+      item => item.name === selectedItem.name
+    );
+
     
     if(indexExiste!== -1){
       console.log(existingItems[indexExiste]);
@@ -61,10 +63,8 @@ function updateCartDisplay() {
   let totalPrice = 0;
   selectedItems.forEach((item) => {
     const listItem = document.createElement("li");
-    listItem.innerText = `${item.name}: $${item.price} $`; // item.name + ": $" + item.price
-    if (item.text) {
-      listItem.innerText += ` - ${item.text}`;
-    }
+    listItem.innerHTML = `${item.name}: ${item.price} ${item.text}`; // item.name + ": $" + item.price
+    
 
     cartItemsContainer.appendChild(listItem);
     totalPrice += parseFloat(item.price);
@@ -118,20 +118,10 @@ function updateCartDisplay() {
   let totalPrice = 0;
   selectedItems.forEach((item) => {
     const listItem = document.createElement("li");
-    listItem.innerText = `${item.name}: ${item.price}`;
+    listItem.innerHTML = `${item.name}: ${item.price} ${item.text}  <button onClick="handleDeleteButtonClick('${item.name}')">delete</button>`;
 
-    // Add a delete button for each item
-    const deleteButton = document.createElement("button");
-    deleteButton.innerText = "Delete";
-    deleteButton.addEventListener("click", () =>
-      handleDeleteButtonClick(item.name)
-    );
-    listItem.appendChild(deleteButton);
-
-    // Display additional text if available (e.g., item.text)
-    if (item.text) {
-      listItem.innerText += ` - ${item.text}`;
-    }
+    
+    
 
     cartItemsContainer.appendChild(listItem);
     totalPrice += parseFloat(item.price);
