@@ -127,8 +127,6 @@ function updateCartDisplay() {
     totalPrice += parseFloat(item.price);
   });
 
-  // Display total price
-  totalPriceElement.innerText = `Total: ${totalPrice.toFixed(2)}`;
 
   // Display total price
   totalPriceElement.innerText = `Total: ${totalPrice}`;
